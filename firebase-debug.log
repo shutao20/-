@@ -1,0 +1,44 @@
+[debug] [2025-03-15T21:42:33.112Z] ----------------------------------------------------------------------
+[debug] [2025-03-15T21:42:33.113Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shuta\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2025-03-15T21:42:33.114Z] CLI Version:   13.34.0
+[debug] [2025-03-15T21:42:33.114Z] Platform:      win32
+[debug] [2025-03-15T21:42:33.114Z] Node Version:  v22.14.0
+[debug] [2025-03-15T21:42:33.114Z] Time:          Sun Mar 16 2025 05:42:33 GMT+0800 (GMT+08:00)
+[debug] [2025-03-15T21:42:33.114Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=319115569&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-03-15T21:42:43.898Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-03-15T21:42:43.898Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-03-15T21:43:04.973Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------391219604229875258082579","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: connect ETIMEDOUT 46.82.174.69:443
+[debug] [2025-03-15T21:43:04.973Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Users\shuta\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:261:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2025-03-15T21:43:04.977Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-03-15T21:43:04.977Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"8a41178a-e587-459d-9222-b550c9d7e2d4"}
+[debug] [2025-03-15T21:43:06.039Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2025-03-15T21:43:06.039Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"pY0xYqbdC2Yq1DTGq5r5-HUIwgTmUYU-iwexROr6160"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    8A411
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=e2WxYF2zrNuuVoqBPTjszMR1d9YGMowd26smBbWFDUc&session=8a41178a-e587-459d-9222-b550c9d7e2d4&attest=pY0xYqbdC2Yq1DTGq5r5-HUIwgTmUYU-iwexROr6160
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2025-03-15T21:44:47.330Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-03-15T21:44:47.330Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
